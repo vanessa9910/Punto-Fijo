@@ -1,4 +1,4 @@
 # Punto Fijo
-Este método inicia haciendo una aproximación lineal la cual converge. Se utiliza con una ecuación f(x) = 0 donde podemos despejar
-x. Después se genera una sucesión de valores aproximados para que la ecuación lineal converga. Se elige una función iteradora con
-respecto a x para derivarla y sacar sus respectivas aproximaciones.
+Un punto fijo de una función $ g$, es un número $ p$ tal que $ g(p)=p$. El problema de encontrar las soluciones de una ecuación $ f(x)=0$ y el de encontrar los puntos fijos de una función $ h(x)$ son equivalentes en el siguiente sentido: dado el problema de encontar las soluciones de una ecuación $ f(x)=0$, podemos definir una función $ g$ con un punto fijo $ p$ de muchas formas; por ejemplo, $ f(x)=x - g(x)$. En forma inversa, si la función $ g$ tiene un punto fijo en $ p$, entonces la función definida por $ f(x)=x - g(x)$ posee un cero en $ p$.
+
+El método de punto fijo inicia con una aproximación inicial $ x_0$ y $ x_{i+1} = g(x_i)$ genera una sucesión de aproximaciones la cual converge a la solución de la ecuación $ f(x)=0$. A la función $ g$ se le conoce como función iteradora. Se puede demostrar que dicha sucesión $ \langle x_n \rangle$ converge siempre y cuando $ \left\vert g^{\prime}(x) \right\vert <1$. 
